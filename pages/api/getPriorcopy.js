@@ -17,7 +17,6 @@ export default async function handler(req, res) {
 
     // Find the document with the corresponding draw time
     const result = await collection.findOne({ drawTime: { $eq: drawTime } });
-   
     // If a document is found, return the winning number
     if (result) {
       res.status(200).json({ winningNumber: result.winningNumber });

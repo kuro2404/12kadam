@@ -5,7 +5,7 @@ import { DataContext } from '../store/GlobalState';
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import Modal from '../components/Modal';
-import ResultsTable from '../components/ResultsTable'
+import ResultsTablecopy from '../components/ResultsTable'
 // import BetButtons from '../components/Buttons'
 
 function bet() {
@@ -76,9 +76,9 @@ function bet() {
             <div className='absolute bg-black opacity-95 h-full w-full'>
                 <Header />
 
-                <div className='flex'>
+                <div className='flex w-full'>
                     <Buttons />
-                    {/* <ResultsTable /> */}
+                    <ResultsTablecopy />
                 </div>
 
                 <form onSubmit={handleBarcodeSubmit}>
